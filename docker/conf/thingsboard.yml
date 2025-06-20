@@ -1,0 +1,22 @@
+queue:
+  type: in-memory
+  pack_processing_timeout_ms: 2000
+  topic_poll_interval_ms: 50
+  stats:
+    enabled: true
+  rocksdb:
+    data_dir: /data/rocksdb
+
+cache:
+  type: redis
+
+json:
+  type: fasterxml
+
+transport:
+  polling_interval: 10
+
+logging:
+  level: info
+  logback:
+    config: classpath:logback.xml
