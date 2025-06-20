@@ -1,5 +1,5 @@
 queue:
-  type: redis
+  type: kafka
   topic_poll_interval_ms: 50
   stats:
     enabled: true
