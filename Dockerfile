@@ -1,6 +1,5 @@
 FROM openjdk:17-jdk-slim as builder
 
-
 # Устанавливаем Git и Maven для сборки проекта
 RUN apt-get update && apt-get install -y git maven && rm -rf /var/lib/apt/lists/*
 
