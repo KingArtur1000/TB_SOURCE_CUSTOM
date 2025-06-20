@@ -9,7 +9,7 @@ WORKDIR /build
 COPY . .
 
 # Собираем backend + UI без тестов
-RUN mvn clean install -DskipTests
+RUN mvn clean install -DskipTests -Dlicense.skip=true
 
 # Финальный слой: чистый runtime
 FROM openjdk:17-jdk-slim
