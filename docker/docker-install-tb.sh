@@ -73,7 +73,7 @@ if [ ! -z "${ADDITIONAL_STARTUP_SERVICES// }" ]; then
 fi
 
 COMPOSE_ARGS="\
-      -f docker-compose.yml ${ADDITIONAL_CACHE_ARGS} ${ADDITIONAL_COMPOSE_ARGS} ${ADDITIONAL_COMPOSE_QUEUE_ARGS} ${ADDITIONAL_COMPOSE_EDQS_ARGS} \
+      -f "$(dirname "$0")/docker-compose-redis.yml" ${ADDITIONAL_CACHE_ARGS} ${ADDITIONAL_COMPOSE_ARGS} ${ADDITIONAL_COMPOSE_QUEUE_ARGS} ${ADDITIONAL_COMPOSE_EDQS_ARGS} \
       run --no-deps --rm -e INSTALL_TB=true -e LOAD_DEMO=${loadDemo} \
       tb-core1"
 
