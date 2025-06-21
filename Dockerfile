@@ -19,8 +19,20 @@ RUN groupadd -r thingsboard && useradd -r -g thingsboard thingsboard
 
 # Копируем артефакты
 COPY --from=builder /build/application/target/thingsboard-*.jar /usr/share/thingsboard/thingsboard.jar
-COPY --from=builder /build/application/target/bin /usr/share/thingsboard/bin
+#COPY --from=builder /build/application/target/bin /usr/share/thingsboard/bin
 COPY --from=builder /build/application/target/conf /usr/share/thingsboard/conf
+
+# Создаём thingsboard.sh 
+RUN mkdir -p /usr/share/thingsboard/bin && \
+    echo '#!/bin/bash\n\
+set -e\n\
+export JAVA_OPTS="${JAVA_OPTS:--Xms256M -Xmx1024M}"\n\
+exec java $JAVA_OPTS -jar /usr/share/thingsboard/thingsboard.jar' \
+    > /usr/share/thingsboard/bin/thingsboard.sh && \
+    chmod +x /usr/share/thingsboard/bin/thingsboard.sh
+
+
+RUN chmod +x /usr/share/thingsboard/bin/thingsboard.sh
 
 # Готовим рабочие каталоги
 RUN mkdir -p /data && chown -R thingsboard:thingsboard /data /usr/share/thingsboard
@@ -28,5 +40,6 @@ RUN mkdir -p /data && chown -R thingsboard:thingsboard /data /usr/share/thingsbo
 USER thingsboard
 WORKDIR /usr/share/thingsboard
 
-# Запуск через стандартный скрипт
-CMD ["bin/thingsboard.sh", "start"]
+# Запуск через наш скрипт
+EXPOSE 8080
+CMD ["bin/thingsboard.sh"]
