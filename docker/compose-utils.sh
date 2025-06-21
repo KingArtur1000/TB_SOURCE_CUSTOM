@@ -16,7 +16,7 @@
 #
 
 function additionalComposeArgs() {
-    source .env
+    source "$(dirname "$0")/.env"
     ADDITIONAL_COMPOSE_ARGS=""
     case $DATABASE in
         postgres)
@@ -33,7 +33,7 @@ function additionalComposeArgs() {
 }
 
 function additionalComposeQueueArgs() {
-    source .env
+    source "$(dirname "$0")/.env"
     ADDITIONAL_COMPOSE_QUEUE_ARGS=""
     case $TB_QUEUE_TYPE in
         kafka)
@@ -62,7 +62,7 @@ function additionalComposeQueueArgs() {
 }
 
 function additionalComposeMonitoringArgs() {
-    source .env
+    source "$(dirname "$0")/.env"
 
     if [ "$MONITORING_ENABLED" = true ]
     then
@@ -74,7 +74,7 @@ function additionalComposeMonitoringArgs() {
 }
 
 function additionalComposeCacheArgs() {
-    source .env
+    source "$(dirname "$0")/.env"
     CACHE_COMPOSE_ARGS=""
     CACHE="${CACHE:-redis}"
     case $CACHE in
@@ -95,7 +95,7 @@ function additionalComposeCacheArgs() {
 }
 
 function additionalStartupServices() {
-    source .env
+    source "$(dirname "$0")/.env"
     ADDITIONAL_STARTUP_SERVICES=""
     case $DATABASE in
         postgres)
@@ -129,7 +129,7 @@ function additionalStartupServices() {
 }
 
 function additionalComposeEdqsArgs() {
-    source .env
+    source "$(dirname "$0")/.env"
 
     if [ "$EDQS_ENABLED" = true ]
     then
@@ -152,7 +152,7 @@ function permissionList() {
       999  999  tb-node/postgres
       "
 
-    source .env
+    source "$(dirname "$0")/.env"
 
     if [ "$DATABASE" = "hybrid" ]; then
       PERMISSION_LIST="$PERMISSION_LIST
