@@ -2646,9 +2646,9 @@
           "settings": {
             "useSystemSettings": true,
             "qrCodeConfig": {
-              "badgeEnabled": true,
+              "badgeEnabled": false,
               "badgePosition": "RIGHT",
-              "qrCodeLabelEnabled": true,
+              "qrCodeLabelEnabled": false,
               "qrCodeLabel": "Scan to connect or download mobile app"
             },
             "background": {
