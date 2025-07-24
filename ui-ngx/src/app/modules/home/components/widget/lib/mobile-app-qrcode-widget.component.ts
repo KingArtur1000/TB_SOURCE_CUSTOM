@@ -50,7 +50,7 @@ export class MobileAppQrcodeWidgetComponent extends PageComponent implements OnI
   previewMode = false;
 
   badgePosition = BadgePosition;
-  showBadgeContainer = false;
+  showBadgeContainer = true;
 
   backgroundStyle$: Observable<ComponentStyle>;
   overlayStyle: ComponentStyle = {};

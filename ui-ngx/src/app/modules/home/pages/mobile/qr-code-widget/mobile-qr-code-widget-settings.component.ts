@@ -42,10 +42,10 @@ export class MobileQrCodeWidgetSettingsComponent extends PageComponent implement
     androidEnabled: [true],
     iosEnabled: [true],
     qrCodeConfig: this.fb.group({
-      showOnHomePage: [false],
-      badgeEnabled: [false],
+      showOnHomePage: [true],
+      badgeEnabled: [true],
       badgePosition: [BadgePosition.RIGHT],
-      qrCodeLabelEnabled: [false],
+      qrCodeLabelEnabled: [true],
       qrCodeLabel: ['', [Validators.required, Validators.maxLength(50)]]
     })
   });
