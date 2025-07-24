@@ -37,15 +37,15 @@ export class MobileQrCodeWidgetSettingsComponent extends PageComponent implement
   readonly entityType = EntityType;
 
   mobileAppSettingsForm = this.fb.group({
-    useDefaultApp: [false],
+    useDefaultApp: [true],
     mobileAppBundleId: [{value: null, disabled: true}, Validators.required],
-    androidEnabled: [false],
-    iosEnabled: [false],
+    androidEnabled: [true],
+    iosEnabled: [true],
     qrCodeConfig: this.fb.group({
-      showOnHomePage: [false],
+      showOnHomePage: [true],
       badgeEnabled: [true],
       badgePosition: [BadgePosition.RIGHT],
-      qrCodeLabelEnabled: [false],
+      qrCodeLabelEnabled: [true],
       qrCodeLabel: ['', [Validators.required, Validators.maxLength(50)]]
     })
   });
