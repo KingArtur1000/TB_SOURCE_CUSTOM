@@ -2273,7 +2273,7 @@
     "name-max-length": "Name should be less than 256",
     "label-max-length": "Label should be less than 256",
     "type-max-length": "Type should be less than 256",
-    "management": "Edge management",
+    "management": "Управление Edge",
     "no-edges-matching": "No edges matching '{{entity}}' were found.",
     "add": "Add edge",
     "no-edges-text": "No edges found",
@@ -2929,7 +2929,7 @@
     "invalid-file-error": "Не правильный формат файла"
   },
   "feature": {
-    "advanced-features": "Advanced features"
+    "advanced-features": "Расширенные функции"
   },
   "filter": {
     "add": "Add filter",
@@ -3730,7 +3730,7 @@
     "latest-version": "Latest version",
     "min-version": "Min version",
     "invalid-version-pattern": "Invalid version format. Please use the format: major.minor.patch (e.g., 1.0.0).",
-    "mobile-center": "Mobile center",
+    "mobile-center": "Мобильный центр",
     "mobile-package": "Application package",
     "mobile-package-max-length": "Application package should be less than 256",
     "mobile-package-required": "Application package is required.",
@@ -3960,7 +3960,7 @@
     "no-template-matching": "No resource matching '{{template}}' were found.",
     "not-found-slack-recipient": "Slack recipient not found",
     "notification": "Notification",
-    "notification-center": "Notification center",
+    "notification-center": "Центр уведомлений",
     "notification-tap-action": "Notification tap action",
     "notification-tap-action-hint": "If not enabled, the default alarm dashboard will be used",
     "notify": "notify",
@@ -4204,10 +4204,10 @@
     "tokenCopiedMessage": "JWT токен скопирован в буфер обмена"
   },
   "profiles": {
-    "profiles": "Profiles"
+    "profiles": "Профили"
   },
   "security": {
-    "security": "Security",
+    "security": "Безопасность",
     "general-settings": "General security settings",
     "access-token": "Access token",
     "access-token-required": "Access token is required",
