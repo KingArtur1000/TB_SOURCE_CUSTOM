@@ -474,7 +474,7 @@
       "badges": "Badges",
       "label": "Метка",
       "label-required": "Требуется метка",
-      "label-max-length": "Метка должена быть меньше или равен 50 символам",
+      "label-max-length": "Метка должна быть меньше или равна 50 символам",
       "right": "Right",
       "left": "Left",
       "set": "Установить",
@@ -9101,7 +9101,7 @@
       "white-labeling": "White-labeling"
     },
     "devices": {
-      "view-docs": "Просмотр док.",
+      "view-docs": "Докум.",
       "inactive": "Неактивны",
       "active": "Активны",
       "total": "Общие"
