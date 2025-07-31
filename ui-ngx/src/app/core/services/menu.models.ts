@@ -602,38 +602,38 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       icon: 'settings_ethernet'
     }
   ],
-  [
-    MenuId.edge_management,
-    {
-      id: MenuId.edge_management,
-      name: 'edge.management',
-      type: 'toggle',
-      path: '/edgeManagement',
-      icon: 'settings_input_antenna'
-    }
-  ],
-  [
-    MenuId.edges,
-    {
-      id: MenuId.edges,
-      name: 'edge.instances',
-      fullName: 'edge.edge-instances',
-      type: 'link',
-      path: '/edgeManagement/instances',
-      icon: 'router'
-    }
-  ],
-  [
-    MenuId.edge_instances,
-    {
-      id: MenuId.edge_instances,
-      name: 'edge.edge-instances',
-      fullName: 'edge.edge-instances',
-      type: 'link',
-      path: '/edgeManagement/instances',
-      icon: 'router'
-    }
-  ],
+  //[
+  //  MenuId.edge_management,
+  //  {
+  //    id: MenuId.edge_management,
+  //    name: 'edge.management',
+  //    type: 'toggle',
+  //    path: '/edgeManagement',
+  //    icon: 'settings_input_antenna'
+  //  }
+  //],
+  //[
+  //  MenuId.edges,
+  //  {
+  //    id: MenuId.edges,
+  //    name: 'edge.instances',
+  //    fullName: 'edge.edge-instances',
+  //    type: 'link',
+  //    path: '/edgeManagement/instances',
+  //    icon: 'router'
+  //  }
+  //],
+  //[
+  //  MenuId.edge_instances,
+  //  {
+  //    id: MenuId.edge_instances,
+  //    name: 'edge.edge-instances',
+  //    fullName: 'edge.edge-instances',
+  //    type: 'link',
+  //    path: '/edgeManagement/instances',
+  //    icon: 'router'
+  //  }
+  //],
   [
     MenuId.rulechain_templates,
     {
