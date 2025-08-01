@@ -1415,7 +1415,7 @@
     "select-state": "Выбрать состояние",
     "state-controller": "Контроллер состояния",
     "state-controller-default": "static (deprecated)",
-    "search": "Search dashboards",
+    "search": "Поиск панелей мониторинга",
     "selected-dashboards": "{ count, plural, =1 {1 dashboard} other {# dashboards} } selected",
     "home-dashboard": "Home dashboard",
     "home-dashboard-hide-toolbar": "Hide home dashboard toolbar",
