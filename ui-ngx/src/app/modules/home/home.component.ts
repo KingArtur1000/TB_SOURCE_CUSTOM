@@ -50,7 +50,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   searchableComponent: ISearchableComponent;
 
   sidenavMode: 'over' | 'push' | 'side' = 'side';
-  sidenavOpened = true;
+  sidenavOpened = false;
 
   logo = 'assets/logo_title_white.svg';
 
@@ -89,7 +89,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
       .subscribe((state: BreakpointState) => {
           if (state.matches) {
             this.sidenavMode = 'side';
-            this.sidenavOpened = true;
+            this.sidenavOpened = false;
           } else {
             this.sidenavMode = 'over';
             this.sidenavOpened = false;

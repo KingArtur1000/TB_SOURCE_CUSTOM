@@ -17,9 +17,9 @@
 -->
 <mat-sidenav-container>
   <mat-sidenav #sidenav class="tb-site-sidenav mat-elevation-z2"
-               [disableClose]="sidenavOpened"
+               [disableClose]="sidenavMode !== 'over'"
                (click)="sidenavClicked()"
-               [mode]="sidenavMode"
+               [mode]="over"
                [opened]="sidenavOpened">
     <header class="tb-nav-header">
       <mat-toolbar color="primary" class="tb-nav-header-toolbar">

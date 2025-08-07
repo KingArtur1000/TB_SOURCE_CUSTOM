@@ -87,12 +87,8 @@
     }
   }
 
-.sidenav-toggle-button:hover {
+.sidenav-toggle-btn:hover {
   transform: translateX(5px); /* слегка выезжает вправо */
   background-color: #5c6bc0; /* немного светлее */
 }
-
-mat-sidenav.tb-site-sidenav {
-    transition: transform 0.3s ease-in-out;
-  }
 }
