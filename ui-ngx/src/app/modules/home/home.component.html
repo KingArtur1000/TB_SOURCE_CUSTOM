@@ -33,7 +33,13 @@
       <tb-side-menu></tb-side-menu>
     </mat-toolbar>
   </mat-sidenav>
+
   <mat-sidenav-content>
+    <!-- 🔘 Кнопка-тогглер, слегка выглядывающая слева -->
+    <button class="sidenav-toggle-btn" (click)="toggleSidenav()">
+      ☰
+    </button>
+
     <div class="flex flex-col" role="main" style="height: 100%;">
       <mat-toolbar color="primary" class="tb-primary-toolbar flex flex-row">
         <button mat-icon-button id="main"
@@ -75,9 +81,11 @@
         <tb-notification-bell></tb-notification-bell>
         <tb-user-menu [displayUserInfo]="!displaySearchMode()"></tb-user-menu>
       </mat-toolbar>
+
       <mat-progress-bar color="warn" style="z-index: 10; margin-bottom: -4px; width: 100%;" mode="indeterminate"
                         *ngIf="!hideLoadingBar && (isLoading$ | async)">
       </mat-progress-bar>
+
       <div tb-toast class="tb-main-content flex flex-1 flex-col">
         <router-outlet (activate)="activeComponentChanged($event)"></router-outlet>
       </div>
