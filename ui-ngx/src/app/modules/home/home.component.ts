@@ -80,8 +80,8 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   ngOnInit() {
 
     const isGtSm = this.breakpointObserver.isMatched(MediaBreakpoints['gt-sm']);
-    this.sidenavMode = isGtSm ? 'side' : 'over';
-    this.sidenavOpened = isGtSm;
+    this.sidenavMode = 'over';
+    this.sidenavOpened = false;
 
     this.breakpointObserver
       .observe(MediaBreakpoints['gt-sm'])

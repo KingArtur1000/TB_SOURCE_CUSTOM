@@ -68,7 +68,7 @@
     position: relative;
   }
 
-    .sidenav-toggle-btn {
+  .sidenav-toggle-btn {
     position: fixed;
     top: 20px;
     left: 0;
@@ -87,7 +87,12 @@
     }
   }
 
-  mat-sidenav.tb-site-sidenav {
+.sidenav-toggle-button:hover {
+  transform: translateX(5px); /* слегка выезжает вправо */
+  background-color: #5c6bc0; /* немного светлее */
+}
+
+mat-sidenav.tb-site-sidenav {
     transition: transform 0.3s ease-in-out;
   }
 }
