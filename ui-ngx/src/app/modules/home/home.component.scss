@@ -67,28 +67,4 @@
     overflow: auto;
     position: relative;
   }
-
-  .sidenav-toggle-btn {
-    position: fixed;
-    top: 20px;
-    left: 0;
-    z-index: 1000;
-    background-color: #3f51b5;
-    color: white;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    padding: 8px 12px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: left 0.3s ease-in-out;
-
-    &:hover {
-      background-color: #303f9f;
-    }
-  }
-
-.sidenav-toggle-btn:hover {
-  transform: translateX(5px); /* слегка выезжает вправо */
-  background-color: #5c6bc0; /* немного светлее */
-}
 }

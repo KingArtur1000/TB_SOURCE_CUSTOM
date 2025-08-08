@@ -50,7 +50,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   searchableComponent: ISearchableComponent;
 
   sidenavMode: 'over' | 'push' | 'side' = 'side';
-  sidenavOpened = false;
+  sidenavOpened = true;
 
   logo = 'assets/logo_title_white.svg';
 
@@ -80,8 +80,8 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
   ngOnInit() {
 
     const isGtSm = this.breakpointObserver.isMatched(MediaBreakpoints['gt-sm']);
-    this.sidenavMode = 'over';
-    this.sidenavOpened = false;
+    this.sidenavMode = isGtSm ? 'side' : 'over';
+    this.sidenavOpened = isGtSm;
 
     this.breakpointObserver
       .observe(MediaBreakpoints['gt-sm'])
@@ -89,7 +89,7 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
       .subscribe((state: BreakpointState) => {
           if (state.matches) {
             this.sidenavMode = 'side';
-            this.sidenavOpened = false;
+            this.sidenavOpened = true;
           } else {
             this.sidenavMode = 'over';
             this.sidenavOpened = false;
@@ -118,12 +118,6 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
       this.sidenav.toggle();
     }
   }
-
-  toggleSidenav() {
-  if (this.sidenav) {
-    this.sidenav.toggle();
-  }
-}
 
   toggleFullscreen() {
     if (screenfull.isEnabled) {
