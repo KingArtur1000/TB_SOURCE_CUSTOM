@@ -67,4 +67,36 @@
     overflow: auto;
     position: relative;
   }
+
+  .sidenav-toggle-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  width: 26px;
+  height: 64px;
+
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+
+  // Трапециевидная форма: правая сторона чуть уже
+  clip-path: polygon(0 0, 100% 8px, 100% 56px, 0 100%);
+
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #5c6bc0;
+    transform: translateX(3px);
+  }
+  }
 }

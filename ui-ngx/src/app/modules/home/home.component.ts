@@ -119,6 +119,13 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
     }
   }
 
+  //Кнопка для выката панели
+  toggleSidenav() {
+  if (this.sidenav) {
+    this.sidenav.toggle();
+  }
+}
+
   toggleFullscreen() {
     if (screenfull.isEnabled) {
       screenfull.toggle();
