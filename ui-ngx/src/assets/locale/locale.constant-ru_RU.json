@@ -2505,10 +2505,10 @@
     "type-users": "Пользователи",
     "list-of-users": "{ count, plural, =1 {Один пользователь} other {Список из # пользователей} }",
     "user-name-starts-with": "Пользователи, чьи имена начинаются с '{{prefix}}'",
-    "type-dashboard": "Дашборд",
-    "type-dashboards": "Дашборды",
+    "type-dashboard": "Панель мониторинга",
+    "type-dashboards": "Панели мониторинга",
     "list-of-dashboards": "{ count, plural, =1 {Одина панель мониторинга} other {Список из # панелей мониторинга} }",
-    "dashboard-name-starts-with": "Дашборды, чьи названия начинаются с '{{prefix}}'",
+    "dashboard-name-starts-with": "Панели мониторинга, чьи названия начинаются с '{{prefix}}'",
     "type-alarm": "Оповещение",
     "type-alarms": "Оповещения",
     "list-of-alarms": "{ count, plural, =1 {Одно оповещение} other {Список из # оповещений} }",
@@ -9047,7 +9047,7 @@
       "columns": "Столбцы"
     },
     "recent-dashboards": {
-      "title": "Дашборды",
+      "title": "Панели мониторинга",
       "last": "Последние",
       "starred": "Помечено",
       "name": "Имя",
