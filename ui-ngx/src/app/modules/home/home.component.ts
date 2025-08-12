@@ -103,16 +103,23 @@ export class HomeComponent extends PageComponent implements AfterViewInit, OnIni
     this.destroy$.complete();
   }
 
-  ngAfterViewInit() {
-    this.textSearch.valueChanges.pipe(
-      debounceTime(150),
-      startWith(''),
-      distinctUntilChanged((a: string, b: string) => a.trim() === b.trim()),
-      skip(1),
-      takeUntil(this.destroy$)
-    ).subscribe(value => this.searchTextUpdated(value.trim()));
-  }
+ngAfterViewInit() {
+  // 1. Авто-открытие sidenav сразу после рендера
+  setTimeout(() => {
+    if (this.sidenav && !this.sidenav.opened) {
+      this.toggleSidenav();
+    }
+  }, 0);
 
+  // 2. Существующая логика textSearch без изменений
+  this.textSearch.valueChanges.pipe(
+    debounceTime(150),
+    startWith(''),
+    distinctUntilChanged((a: string, b: string) => a.trim() === b.trim()),
+    skip(1),
+    takeUntil(this.destroy$)
+  ).subscribe(value => this.searchTextUpdated(value.trim()));
+}
   sidenavClicked() {
     if (this.sidenavMode === 'over') {
       this.sidenav.toggle();
