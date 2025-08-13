@@ -356,8 +356,8 @@ div.tb-widget .tb-widget-content.tb-no-interaction {
             inset: 2px;
             border-radius: 2px;
             z-index: 0;
-            .leaflet-control-attribution {
-              display: none;
+            ::ng-deep .leaflet-control-attribution {
+            display: none !important;
             }
           }
           input.tb-layer-button {

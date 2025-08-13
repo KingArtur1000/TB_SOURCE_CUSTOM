@@ -1292,6 +1292,34 @@ pre.tb-highlight {
       background: rgba(0, 0, 0, 0.06);
     }
   }
+
+  .leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-control-attribution {
+  font-size: 11px;
+  opacity: 0.75;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Скрыть только ссылку на Leaflet (если вдруг она всё ещё появляется) */
+.leaflet-control-attribution a[href*="leafletjs.com"] {
+  display: none !important;
+}
+
+/* Скрыть любые картинки/иконки внутри атрибуции */
+.leaflet-control-attribution img,
+.leaflet-control-attribution svg {
+  display: none !important;
+}
+
+/* Переместить/подвинуть блок */
+.leaflet-bottom.leaflet-right .leaflet-control-attribution {
+  margin: 0 6px 6px 0;
+}
 }
 
 /***************
