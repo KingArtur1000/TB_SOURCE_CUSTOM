@@ -3040,9 +3040,9 @@
     "function": "Функция"
   },
   "gateway": {
-    "gateway-name": "Gateway name",
-    "gateway-name-required": "Gateway name is required.",
-    "gateways": "Gateways",
+    "gateway-name": "Имя шлюза",
+    "gateway-name-required": "Требуется имя шлюза.",
+    "gateways": "Шлюзы",
     "create-new-gateway": "Create a new gateway",
     "create-new-gateway-text": "Are you sure you want create a new gateway with name: '{{gatewayName}}'?",
     "launch-command": "Launch command",
@@ -3082,7 +3082,7 @@
     "gallery": "Image gallery",
     "search": "Search image",
     "selected-images": "{ count, plural, =1 {1 image} other {# images} } selected",
-    "created-time": "Created time",
+    "created-time": "Время создания",
     "name": "Name",
     "name-required": "Name is required.",
     "resolution": "Resolution",
@@ -3745,7 +3745,7 @@
     "sha256-certificate-fingerprints-required": "SHA256 certificate fingerprints is required",
     "sha256-certificate-fingerprints-pattern": "Invalid format SHA256 certificate fingerprint",
     "show-hidden-pages": "Show hidden pages",
-    "status": "Status",
+    "status": "Статус",
     "status-type": {
       "deprecated": "Deprecated",
       "draft": "Draft",
@@ -4044,7 +4044,7 @@
       "public-channel": "Public channel"
     },
     "start-from-scratch": "Start from scratch",
-    "status": "Status",
+    "status": "Статус",
     "stop-escalation-alarm-status-become": "Stop the escalation on the alarm status become:",
     "subject": "Тема",
     "subject-required": "Subject is required",
@@ -4178,7 +4178,7 @@
     },
     "upload-binary-file": "Upload binary file",
     "use-external-url": "Use external URL",
-    "version": "Version",
+    "version": "Версия",
     "version-required": "Version is required.",
     "version-tag": "Version tag",
     "version-tag-hint": "Custom tag should match the package version reported by your device.",
@@ -5170,7 +5170,7 @@
     "fetch-latest-telemetry-with-timestamp-tooltip": "If selected, latest telemetry values will be added to the outbound metadata with timestamp, e.g: \"{{latestTsKeyName}}\": \"{\"ts\":1574329385897, \"value\":42}\"",
     "tell-failure": "Tell failure if any of the attributes are missing",
     "tell-failure-tooltip": "If at least one selected key doesn't exist the outbound message will report \"Failure\".",
-    "created-time": "Created time",
+    "created-time": "Время создания",
     "chip-help": "Press 'Enter' to complete {{inputName}} input. \nPress 'Backspace' to delete {{inputName}}. \nMultiple values supported.",
     "detail": "detail",
     "field-name": "field name",
@@ -6361,7 +6361,7 @@
     "export-calculated-fields": "Export calculated fields",
     "entity-versions": "Entity versions",
     "versions": "Versions",
-    "created-time": "Created time",
+    "created-time": "Время создания",
     "version-id": "Version ID",
     "no-entity-versions-text": "No entity versions found",
     "no-versions-text": "No versions found",
@@ -6995,7 +6995,7 @@
       "on": "On",
       "off": "Off",
       "label": "Label",
-      "status": "Status",
+      "status": "Статус",
       "icon": "Icon",
       "color-palette": "Color palette",
       "disabled-color-palette": "Disabled color palette",
@@ -7050,10 +7050,10 @@
       "enable-comparison": "Enable comparison",
       "time-for-comparison": "Comparison period",
       "time-for-comparison-previous-interval": "Previous interval (default)",
-      "time-for-comparison-days": "Day ago",
-      "time-for-comparison-weeks": "Week ago",
-      "time-for-comparison-months": "Month ago",
-      "time-for-comparison-years": "Year ago",
+      "time-for-comparison-days": "День назад",
+      "time-for-comparison-weeks": "Неделю назад",
+      "time-for-comparison-months": "Месяц назад",
+      "time-for-comparison-years": "Год назад",
       "time-for-comparison-custom-interval": "Custom interval",
       "custom-interval-value": "Custom interval value (ms)",
       "comparison-x-axis-settings": "Comparison X axis settings",
@@ -7345,7 +7345,7 @@
       "connector-state-param-key": "Connector state parameter key",
       "message": "Message",
       "level": "Level",
-      "created-time": "Created time"
+      "created-time": "Время создания"
     },
     "gauge": {
       "default-color": "Default color",
@@ -9021,11 +9021,11 @@
       "no-data": "No data"
     },
     "transport-messages": {
-      "title": "Transport messages",
-      "info": "All the messages that came from devices"
+      "title": "Транспортные сообщения",
+      "info": "Все сообщения, пришедшие с устройств"
     },
     "activity": {
-      "title": "Activity"
+      "title": "Активность"
     },
     "documentation": {
       "title": "Документация",
@@ -9066,7 +9066,7 @@
       "feature-not-configured": "Feature is not configured.\nClick to setup"
     },
     "version-info": {
-      "title": "Version",
+      "title": "Версия",
       "contact-us": "Contact us",
       "current-version": "Current version",
       "current": "Current",
@@ -9076,9 +9076,9 @@
       "version-is-up-to-date": "Version is up to date"
     },
     "usage-info": {
-      "title": "Usage",
-      "entities": "Entities",
-      "api-calls": "API calls"
+      "title": "Использование",
+      "entities": "Сущности",
+      "api-calls": "Вызовы API"
     },
     "functions": {
       "title": "Functions",
@@ -9112,7 +9112,7 @@
       "total": "Общие"
     },
     "getting-started": {
-      "get-started": "Get started",
+      "get-started": "Начинающим",
       "finish": "Finish",
       "done-welcome-title": "Welcome on board",
       "done-welcome-text": "You did great with it!",
@@ -9150,48 +9150,48 @@
       },
       "tenant-admin": {
         "step1": {
-          "title": "Create device",
-          "content": "<p>Let's provision your first device to the platform via UI. Follow the documentation on how to do it:</p>",
-          "how-to-create-device": "How to create Device"
+          "title": "Создать устройство",
+          "content": "<p>Давайте подключим ваше первое устройство к платформе через пользовательский интерфейс. Следуйте инструкциям в документации:</p>",
+          "how-to-create-device": "Как создать устройство"
         },
         "step2": {
-          "title": "Connect device",
-          "content-before": "<p>To connect the device you need to get the device credentials. We recommend using default auto-generated credentials which is access token for this guide.</p><ul><li>Go to device table</li><li>Click on the device row to open device details</li><li>Press the button \"Copy access token\"</li></ul><p>Use simple commands to publish data over HTTP. Don't forget to replace <em>$ACCESS_TOKEN</em> with your device access token:</p>",
+          "title": "Подключить устройство",
+          "content-before": "<p>Для подключения устройства необходимо получить его учётные данные. Мы рекомендуем использовать автоматически сгенерированные учётные данные по умолчанию, которые являются токеном доступа для этого руководства.</p><ul><li>Перейдите к таблице устройств.</li><li>Нажмите на строку устройства, чтобы открыть сведения об устройстве.</li><li>Нажмите кнопку «Копировать токен доступа».</li></ul><p>Используйте простые команды для публикации данных по HTTP. Не забудьте заменить <em>$ACCESS_TOKEN</em> на токен доступа вашего устройства:</p>",
           "ubuntu": {
-            "install-curl": "Install cURL for Ubuntu:"
+            "install-curl": "Установить cURL для Ubuntu:"
           },
           "macos": {
-            "install-curl": "Install cURL for MacOS:"
+            "install-curl": "Установить cURL для MacOS:"
           },
           "windows": {
-            "install-curl": "Starting Windows 10 b17063, cURL is available by default."
+            "install-curl": "Начиная с Windows 10 b17063, cURL доступен по умолчанию."
           },
-          "replace-access-token": "Replace <em>$ACCESS_TOKEN</em> with your device's token:",
-          "content-after": "<p>You can also use other protocols such as MQTT, CoAP, etc.</p><p>Follow the documentation on how to do it:</p>",
-          "how-to-connect-device": "How to connect Device"
+          "replace-access-token": "Замените <em>$ACCESS_TOKEN</em> на токен вашего устройства:",
+          "content-after": "<p>Вы также можете использовать другие протоколы, такие как MQTT, CoAP и т. д.</p><p>Следуйте документации, чтобы узнать, как это сделать:</p>",
+          "how-to-connect-device": "Как подключить устройство"
         },
         "step3": {
-          "title": "Create dashboard",
-          "content": "<p>Create a dashboard to visualize data from entities such as assets, devices, etc.</p><p>Follow the documentation on how to do it:</p>",
-          "how-to-create-dashboard": "How to create Dashboard"
+          "title": "Создать панель мониторинга",
+          "content": "<p>Создайте панель мониторинга для визуализации данных из таких сущностей, как активы, устройства и т. д.</p><p>Следуйте документации, чтобы узнать, как это сделать:</p>",
+          "how-to-create-dashboard": "Как создать панель мониторинга"
         },
         "step4": {
-          "title": "Configure alarm rules",
-          "alarm-rules": "Alarm rules",
-          "content": "<p>Let's raise an alarm when the temperature reaches 25°C. Follow the documentation on how to do it:</p>",
-          "how-to-configure-alarm-rules": "How to configure Alarm rules"
+          "title": "Настройте условия тревоги",
+          "alarm-rules": "Условия тревоги",
+          "content": "<p>Давайте поднимем тревогу, когда температура достигнет 25°C. Следуйте инструкциям:</p>",
+          "how-to-configure-alarm-rules": "Как настроить условия тревоги"
         },
         "step5": {
-          "title": "Create alarm",
-          "content-before": "<p>To trigger the alarm, send a new telemetry value of 26°C or higher.</p>",
-          "replace-access-token": "Replace <em>$ACCESS_TOKEN</em> with your device's token:",
-          "content-after": "<p>Follow the documentation on how to do it:</p>",
-          "how-to-create-alarm": "How to create Alarm"
+          "title": "Создать сигнал тревоги",
+          "content-before": "<p>Чтобы активировать сигнал тревоги, отправьте новое телеметрическое значение 26°C или выше.</p>",
+          "replace-access-token": "Замените <em>$ACCESS_TOKEN</em> на токен вашего устройства:",
+          "content-after": "<p>Следуйте документации, как это сделать:</p>",
+          "how-to-create-alarm": "Как создать сигнал тревоги"
         },
         "step6": {
-          "title": "Create customer and assign dashboard",
-          "content": "<p>By creating end-user dashboards, a customer user can only see his own devices, and data from another customer will be hidden.</p><p>Follow the documentation on how to do it:</p>",
-          "how-to-create-customer-and-assign-dashboard": "How to create Customer and assign Dashboard"
+          "title": "Создать клиента и назначить панель управления",
+          "content": "<p>Создавая панели мониторинга для конечных пользователей, клиент может видеть только свои собственные устройства, а данные другого клиента будут скрыты.</p><p>Следуйте документации, чтобы узнать, как это сделать:</p>",
+          "how-to-create-customer-and-assign-dashboard": "Как создать клиента и назначить панель мониторинга"
         }
       }
     }
