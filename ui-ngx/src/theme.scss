@@ -248,9 +248,9 @@ $tb-dark-theme: map_merge($tb-dark-theme, $color);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(203, 203, 203, 0.8);
+    background: #5c6bc0;
     &:hover {
-      background: rgba(165, 165, 165, 0.65);
+      background: #303f9f;
     }
   }
 }
